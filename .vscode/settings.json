@@ -1,0 +1,17 @@
+{
+  "cSpell.words": ["dall", "firestore", "openai", "pesquisa", "tailwindcss"],
+  // prettier format on save
+
+  "editor.formatOnSave": true,
+
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  //pt-br e en-us
+
+  "cSpell.language": "pt-br, en-us"
+}
