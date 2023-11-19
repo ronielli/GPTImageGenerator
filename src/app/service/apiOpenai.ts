@@ -7,8 +7,9 @@ const apiOpenai = axios.create({
 
 apiOpenai.interceptors.request.use(
   async (config) => {
+    config.headers["Accept"] = "application/json";
     config.headers["Content-Type"] = "application/json";
-    config.headers.Authorization = `Bearer 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`;
+    config.headers.Authorization = `Bearer ${process.env.NEXT_PUBLIC_OPENAI_API_KEY}`;
     return config;
   },
   (error) => {
